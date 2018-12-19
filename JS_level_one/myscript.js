@@ -1,28 +1,16 @@
+const first_name = prompt('First name');
+const last_name = prompt('Last name');
+const age = prompt('Age');
+const height = prompt('Height');
+const pet_name = prompt('Pet name');
 
-// for(i = 0; i < 5; i++) {
-//     console.log('hello')
-// }
-
-// var x = 0;
-// while(x<5) {
-//     console.log('hello');
-//     x = x+1;
-// }
-
-
-
-
-var x = 1;
-
-while(x < 26) {
-    console.log(x);
-    x = x+2;
+if (first_name[0] === last_name[0] && age > 20 && age < 30 && height >=170 && pet_name.slice(-1) === 'y') {
+    console.log("Comrade")
+} else {
+    console.log('Nothing to see here')
 }
 
 
 
-// for(i = 1; i < 27; i=i+2) {
-//     console.log(i)
-// }
 
  
