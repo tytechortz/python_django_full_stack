@@ -119,18 +119,18 @@
 // caught_speeding(65, false) → 1
 // caught_speeding(65, true) → 0
 
-function caught_speeding(speed, is_birthday){
-  if(speed >= 81 && is_birthday == false || speed >=86 && is_birthday){
-    console.log(2)
-  } else if (speed >= 61 && is_birthday == false || speed > 66 && is_birthday){
-    console.log(1)
-  } else if (speed <= 60 && is_birthday == false || speed <= 66 && is_birthday){
-    console.log(0)
-  }
+// function caught_speeding(speed, is_birthday){
+//   if(speed >= 81 && is_birthday == false || speed >=86 && is_birthday){
+//     console.log(2)
+//   } else if (speed >= 61 && is_birthday == false || speed > 66 && is_birthday){
+//     console.log(1)
+//   } else if (speed <= 60 && is_birthday == false || speed <= 66 && is_birthday){
+//     console.log(0)
+//   }
 
-}
+// }
 
-caught_speeding(66, true)
+// caught_speeding(66, true)
 
 
 // BONUS: MAKE BRICKS
@@ -146,6 +146,10 @@ caught_speeding(66, true)
 // makeBricks(3, 1, 9) → false
 // makeBricks(3, 2, 10) → true
 
-// function makeBricks(small, big, goal){
-//   //Code Goes Here
-// }
+function makeBricks(small, big, goal){
+  if(goal - small == 0 || goal - big * 5 == 0 || goal - (big * 5) <= small){
+    console.log("true")
+  } else (console.log('false'))
+}
+
+makeBricks(4, 2, 15) 
