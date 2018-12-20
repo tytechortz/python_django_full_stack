@@ -88,22 +88,22 @@
 // luckySum(1, 2, 13) → 3
 // luckySum(1, 13, 3) → 1
 
-function luckySum(a, b, c){
-  if(a != 13 && b != 13 && c != 13){
-    console.log(a + b + c);
-    } else if 
-      (a === 13){
-        console.log(0);
-    } else if 
-      (b === 13 ){
-        console.log(a);
-    } else if 
-      (c === 13){
-        console.log(a + b);
-    }
-}
+// function luckySum(a, b, c){
+//   if(a != 13 && b != 13 && c != 13){
+//     console.log(a + b + c);
+//     } else if 
+//       (a === 13){
+//         console.log(0);
+//     } else if 
+//       (b === 13 ){
+//         console.log(a);
+//     } else if 
+//       (c === 13){
+//         console.log(a + b);
+//     }
+// }
 
-luckySum(3,3,3)
+// luckySum(3,3,3)
 
 // PROBLEM 5:
 //
@@ -119,9 +119,18 @@ luckySum(3,3,3)
 // caught_speeding(65, false) → 1
 // caught_speeding(65, true) → 0
 
-// function caught_speeding(speed, is_birthday){
-//   //Code Goes Here
-// }
+function caught_speeding(speed, is_birthday){
+  if(speed >= 81 && is_birthday == false || speed >=86 && is_birthday){
+    console.log(2)
+  } else if (speed >= 61 && is_birthday == false || speed > 66 && is_birthday){
+    console.log(1)
+  } else if (speed <= 60 && is_birthday == false || speed <= 66 && is_birthday){
+    console.log(0)
+  }
+
+}
+
+caught_speeding(66, true)
 
 
 // BONUS: MAKE BRICKS
