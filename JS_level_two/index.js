@@ -1,10 +1,22 @@
+// var employee = {
+//   name: "John Smith",
+//   job: "Programmer",
+//   age: 31,
+//   nameLength: function(){
+//     console.log(this.name.length)
+//   }
+// }
+
+// employee.nameLength()
+
 var employee = {
   name: "John Smith",
   job: "Programmer",
   age: 31,
-  nameLength: function(){
-    console.log(this.name.length)
+  employeeAlert: function(){
+    alert('Name is: '+this.name+ ', job is: '+this.job+ ', age is: '+this.age)
   }
-}
+};
 
-employee.nameLength()
+employee.employeeAlert()
+
