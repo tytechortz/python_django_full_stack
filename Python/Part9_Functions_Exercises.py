@@ -121,10 +121,14 @@ print(doubleChar('The'))
 # no_teen_sum(2, 13, 1) → 3
 # no_teen_sum(2, 1, 14) → 3
 
-# def no_teen_sum(a, b, c):
-  # CODE GOES HERE
-# def fix_teen(n):
-  # CODE GOES HERE
+def no_teen_sum(a, b, c):
+  return fix_teen(a) + fix_teen(b) + fix_teen(c)
+def fix_teen(n):
+  if n [13,14,17,18,19]:
+    return 0
+  return n
+
+
 
 #####################
 ## -- PROBLEM 6 -- ##
