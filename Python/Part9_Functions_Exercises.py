@@ -72,8 +72,14 @@ print(stringBits('Heeololeo'))
 # end_other('abc', 'abXabc') → True
 
 
-# def end_other(a, b):
-  # CODE GOES HERE
+def end_other(a, b):
+  a = a.lower()
+  b = b.lower()
+
+  # return (b.endswith(a) or a.endswith(b))
+  return a[-(len(b)):] == b or a == b[-len(a):]
+
+print(end_other('Hiabc', 'zbc'))
 
 #####################
 ## -- PROBLEM 4 -- ##
