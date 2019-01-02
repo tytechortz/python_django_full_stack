@@ -1,2 +1,4 @@
-if 1<2:
-    print('yes')
+import random
+digits = list(range(10))
+random.shuffle(digits)
+print(digits[:3])
