@@ -27,7 +27,7 @@ def arrayCheck(nums):
       return True
   return False
 
-arrayCheck([1, 1, 2, 3, 1])
+print(arrayCheck([1, 1, 2, 4, 1]))
 
 
 
@@ -44,8 +44,15 @@ arrayCheck([1, 1, 2, 3, 1])
 # stringBits('Hi') → 'H'
 # stringBits('Heeololeo') → 'Hello'
 
-def stringBits(str):
+def stringBits(mystring):
   # CODE GOES HERE
+  result = ""
+  for i in range(len(mystring)):
+    if i%2 == 0:
+      result = result + mystring[i]
+  return result
+
+print(stringBits('Heeololeo'))
 
 
 #####################
@@ -65,7 +72,7 @@ def stringBits(str):
 # end_other('abc', 'abXabc') → True
 
 
-def end_other(a, b):
+# def end_other(a, b):
   # CODE GOES HERE
 
 #####################
@@ -79,7 +86,7 @@ def end_other(a, b):
 # doubleChar('AAbb') → 'AAAAbbbb'
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
-def doubleChar(str):
+# def doubleChar(str):
   # CODE GOES HERE
 
 
@@ -104,9 +111,9 @@ def doubleChar(str):
 # no_teen_sum(2, 13, 1) → 3
 # no_teen_sum(2, 1, 14) → 3
 
-def no_teen_sum(a, b, c):
+# def no_teen_sum(a, b, c):
   # CODE GOES HERE
-def fix_teen(n):
+# def fix_teen(n):
   # CODE GOES HERE
 
 #####################
@@ -121,5 +128,5 @@ def fix_teen(n):
 # count_evens([2, 2, 0]) → 3
 # count_evens([1, 3, 5]) → 0
 
-def count_evens(nums):
+# def count_evens(nums):
   # CODE GOES HERE
