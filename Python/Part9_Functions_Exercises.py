@@ -92,9 +92,13 @@ print(end_other('Hiabc', 'zbc'))
 # doubleChar('AAbb') → 'AAAAbbbb'
 # doubleChar('Hi-There') → 'HHii--TThheerree'
 
-# def doubleChar(str):
-  # CODE GOES HERE
+def doubleChar(mystring):
+  result = ""
+  for i in mystring:
+    result += i*2
+  return result
 
+print(doubleChar('The'))
 
 #####################
 ## -- PROBLEM 5 -- ##
