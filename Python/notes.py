@@ -1,4 +1,5 @@
-import random
-digits = list(range(10))
-random.shuffle(digits)
-print(digits[:3])
+my_income = 58900
+tax_rate = 0.1
+my_taxes = my_income*tax_rate
+
+print(my_taxes)
